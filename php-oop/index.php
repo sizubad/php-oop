@@ -40,9 +40,10 @@ $row = $db->query("SELECT * FROM tb_user WHERE id = $id")[0];
     <h1><?php echo $row['nama'] //pemanggilan data 'nama' dari database ?></h1>
     
     <!-- masuk ke logout.php dan otomatis menjalankan session_destroy -->
-    <a href="logout.php">
-      <button>Keluar</button>
-    </a>
+<form action="logout.php" method="POST">
+  <button type="submit">Keluar</button>
+</form>
+
 
   </div>
 
